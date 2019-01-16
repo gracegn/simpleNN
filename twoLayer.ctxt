@@ -1,0 +1,24 @@
+#BlueJ class context
+comment0.target=twoLayer
+comment0.text=\n\ two\ layer\ neural\ network\ aka\ 2\ groups\ of\ weights\ with\ i\ inputs\n\ X\ \ \=\ 1xi\ (input\ layer)\n\ W1\ \=\ ixh\n\ H\ \ \=\ 1xh\ (hidden\ layer)\n\ W2\ \=\ hxy\n\ Y\ \ \=\ 1xy\ (output\ layer)\n\ note\ that\ h,\ the\ number\ of\ hidden\ neurons,\ will\ be\ determined\ by\ taking\ the\n\ rounded\ down\ mean\ of\ i\ and\ y\ as\ reasoned\ in\ the\ following\n\ https\://stats.stackexchange.com/questions/181/how-to-choose-the-number-of-hidden-layers-and-nodes-in-a-feedforward-neural-netw\n\ \n\ equations\:\n\ H\ \=\ f(XW1\ +\ B1)\n\ Y\ \=\ f(XW2\ +\ B2)\n\ J\ \=\ error\ \=\ (1/2)(Y-Y*)^2\ where\ Y\ \=\ target\ or\ ideal,\ Y*\ \=\ output\ or\ model\n\ \n\ net\ \=\ matrix\ product\ of\ input\ &\ weights\ +\ bias\ \ ie\ i_1*w_1\ +\ i_2*w_2\ +\ b1\n\ \ \ net'\ \=\ coefficient\ of\ the\ weight\n\ out\ \=\ activation\ function\ applied\ to\ the\ net\ \ ie\ 1/(1\ +\ e^(-x))\n\ \ \ out'\ \=\ \n\ Etot\ \=\ sum\ of\ the\ errors\n\ \ \ Etot'\ \=\ \n\ \n
+comment1.params=
+comment1.target=void\ main()
+comment10.params=THING\ inp
+comment10.target=double\ netoOuth(int,\ java.util.List)
+comment2.params=bias\ inp\ w\ h
+comment2.target=void\ net(double,\ java.util.ArrayList,\ java.util.List,\ java.util.ArrayList)
+comment3.params=h\ out
+comment3.target=void\ outActFunc(java.util.ArrayList,\ java.util.ArrayList)
+comment4.params=x
+comment4.target=double\ actFunc(double)
+comment5.params=outer\ inner\ temp\ arr
+comment5.target=double\ loadInitial(int,\ int,\ double,\ java.util.List)
+comment6.params=target\ out
+comment6.target=double\ totalError(java.util.ArrayList,\ java.util.ArrayList)
+comment7.params=THING\ target\ out
+comment7.target=double\ eOuto(int,\ java.util.ArrayList,\ java.util.ArrayList)
+comment8.params=THING\ out
+comment8.target=double\ outNet(int,\ java.util.ArrayList)
+comment9.params=THING2\ inp
+comment9.target=double\ netWi(int,\ java.util.ArrayList)
+numComments=11
